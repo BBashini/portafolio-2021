@@ -1,2 +1,0 @@
-(this["webpackJsonpportafolio-2021"]=this["webpackJsonpportafolio-2021"]||[]).push([[0],{9:function(e,t,o){"use strict";o.r(t);var n=o(1),r=o.n(n),c=o(3),s=o.n(c),a=o(0);var i=function(){return Object(a.jsx)("div",{className:"app",children:"hello"})};s.a.render(Object(a.jsx)(r.a.StrictMode,{children:Object(a.jsx)(i,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.b26d58dc.chunk.js.map
