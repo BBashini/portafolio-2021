@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portafolio-2021/static/css/main.842bc20e.chunk.css",
-    "main.js": "/portafolio-2021/static/js/main.8c28527f.chunk.js",
-    "main.js.map": "/portafolio-2021/static/js/main.8c28527f.chunk.js.map",
+    "main.css": "/portafolio-2021/static/css/main.40c72624.chunk.css",
+    "main.js": "/portafolio-2021/static/js/main.3d960943.chunk.js",
+    "main.js.map": "/portafolio-2021/static/js/main.3d960943.chunk.js.map",
     "runtime-main.js": "/portafolio-2021/static/js/runtime-main.1377ed49.js",
     "runtime-main.js.map": "/portafolio-2021/static/js/runtime-main.1377ed49.js.map",
     "static/js/2.433d035a.chunk.js": "/portafolio-2021/static/js/2.433d035a.chunk.js",
     "static/js/2.433d035a.chunk.js.map": "/portafolio-2021/static/js/2.433d035a.chunk.js.map",
     "index.html": "/portafolio-2021/index.html",
-    "static/css/main.842bc20e.chunk.css.map": "/portafolio-2021/static/css/main.842bc20e.chunk.css.map",
+    "static/css/main.40c72624.chunk.css.map": "/portafolio-2021/static/css/main.40c72624.chunk.css.map",
     "static/js/2.433d035a.chunk.js.LICENSE.txt": "/portafolio-2021/static/js/2.433d035a.chunk.js.LICENSE.txt",
+    "static/media/globe.c824dd0f.png": "/portafolio-2021/static/media/globe.c824dd0f.png",
     "static/media/man.6c7b03f8.png": "/portafolio-2021/static/media/man.6c7b03f8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1377ed49.js",
     "static/js/2.433d035a.chunk.js",
-    "static/css/main.842bc20e.chunk.css",
-    "static/js/main.8c28527f.chunk.js"
+    "static/css/main.40c72624.chunk.css",
+    "static/js/main.3d960943.chunk.js"
   ]
 }
