@@ -2,7 +2,7 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react"
 import letterB from "./B.png"
-import down from "./down.png"
+import { ExpandMore} from "@material-ui/icons";
 
 export default function Intro() {
   const textRef = useRef();
@@ -12,7 +12,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Engineer", "Designer", "Content Creator"],
+      strings: ["Computer Engineer", "Web Developer", "Content Creator"],
     });
   }, []);
 
@@ -28,11 +28,11 @@ export default function Intro() {
           <h2>Hi there, I'm</h2>
           <h1>Bashini B</h1>
           <h3>
-            Software <span ref={textRef}></span>
+          <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
-          <img src={down} alt="" />
+        <ExpandMore className="down"/> 
         </a>
       </div>
     </div>
