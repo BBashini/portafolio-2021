@@ -3,10 +3,10 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  commercePortfolio,
+  socialPortfolio,
+  gamesPortfolio,
+  blogPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -18,20 +18,20 @@ export default function Portfolio() {
       title: "Featured",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "commerce",
+      title: "Commerce",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "social",
+      title: "Social Media",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "games",
+      title: "Games",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "blog",
+      title: "Blog",
     },
   ];
 
@@ -40,17 +40,17 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "commerce":
+        setData(commercePortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "social":
+        setData(socialPortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "games":
+        setData(gamesPortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "blog":
+        setData(blogPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -73,10 +73,12 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
+          <a href={d.href}>
             <img
               src={d.img}
               alt=""
             />
+          </a>
             <h3>{d.title}</h3>
           </div>
         ))}
