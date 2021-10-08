@@ -34,9 +34,9 @@
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
+      height:calc(100vh - 70px);
       flex-direction: column;
-      justify-content: center;
+      
     }
 
     .container {
@@ -61,7 +61,7 @@
         }
 
         .left {
-          flex: 4;
+          flex: 6;
           height: 80%;
           display: flex;
           align-items: center;
@@ -72,53 +72,38 @@
             height: 70%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+           
 
-            .imgContainer {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              background-color: rgb(245, 179, 155);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              @include mobile {
-                width: 20px;
-                height: 20px;
-              }
-
-              img {
-                width: 25px;
-
-                @include mobile {
-                  width: 15px;
-                }
-              }
-            }
-            h2 {
-              font-size: 20px;
+            h1 {
+              font-size: 30px;
 
               @include mobile{
+                padding-top: 25px;
                 font-size: 13px;
               }
             }
+
+            h3 {
+              font-size: 18px;
+              color:crimson;
+
+              @include mobile{
+                font-size: 10px;
+              }
+            }
+
             p {
+              padding-top: 10px;
               font-size: 13px;
               @include mobile{
                 display: none;
               }
             }
-            span {
-              font-size: 12px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
-            }
+           
           }
         }
         .right {
-          flex: 8;
+          flex: 6;
           height: 100%;
           display: flex;
           align-items: center;
@@ -126,8 +111,9 @@
           overflow: hidden;
 
           img {
-            width: 400px;
-            transform: rotate(-10deg);
+            width: max-content;
+            height: max-content;
+            transform: rotate(-5deg);
           }
         }
       }

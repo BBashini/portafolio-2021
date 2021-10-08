@@ -1,39 +1,36 @@
 import { useState } from "react";
 import "./works.scss";
 import arrow from "./arrow.png"
-import mobile from "./mobile.png"
-import globe from "./globe.png"
-import writing from "./writing.png"
+import ecommerce from "./ecommerce.png"
+import business from "./business.png"
+import medApp from "./medApp.png"
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      icon: mobile,
-      title: "Web Design",
+      title: "Full Stack Web Developer",
+      company: "Veer AI",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "Worked on both the Frontend and the Backend of company website & Frontend of company product.",
+      img:ecommerce,
     },
     {
       id: "2",
-      icon: globe,
-      title: "Mobile Application",
+      title: "Engineering Compliance Analyst Intern",
+      company: "Medstack Inc",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "Assisted in acquiring HiTrust certification.",
+      img:business,
     },
     {
       id: "3",
-      icon: writing,
-      title: "Branding",
+      title: "Lead Full Stack Developer Intern",
+      company: "St.Micheal's hospital & Biomedical Zone",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "Modified Frontend and created Backend for With Women application",
+      img:medApp,
     },
   ];
 
@@ -54,17 +51,14 @@ export default function Works() {
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
-                  <div className="imgContainer">
-                    <img src={d.icon} alt="" />
-                  </div>
-                  <h2>{d.title}</h2>
+                  <h1>{d.title}</h1>
+                  <h3> {d.company}</h3>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
                 </div>
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>
