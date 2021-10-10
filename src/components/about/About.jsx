@@ -1,37 +1,34 @@
 import "./about.scss";
+import faceRecognition from "./faceRecognition.jpg"
+import waxSeal from "./waxSeal.jpg"
+import globalCitizen from "./globalCitizen.jpg"
 
 export default function About() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
-      img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
+      name: "BEng Computer Engineer",
+      title: "Ryerson University",
+      img:waxSeal,
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Graduated with Distinction, Deans list, Minor in Econ",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
-      img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
+      name: "AISEC Global Entrepreneur",
+      title: "Unipayments",
+      img:globalCitizen,
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Software development Intern at Brasilia, Brazil",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
-      img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
+      name: "Published Author",
+      title: "IEEE",
+      img:faceRecognition,
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "Parallel Computer For Face Recognition Using Artificial Intelligence",
     },
   ];
   return (
@@ -41,13 +38,13 @@ export default function About() {
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
+              
               <img
                 className="user"
                 src={d.img}
                 alt=""
               />
-              <img className="right" src={d.icon} alt="" />
+             
             </div>
             <div className="center">
               {d.desc}
