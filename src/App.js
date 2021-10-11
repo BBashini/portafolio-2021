@@ -7,7 +7,7 @@ import Works from "./components/works/Works"
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/Menu"
-import Ball from "./components/ball/Ball"
+
 
 import { useState } from "react"
 
@@ -23,7 +23,6 @@ function App() {
         <Works/>
         <About/>
         <Contact/>
-        <Ball/>
       </div>
     </div>
   );

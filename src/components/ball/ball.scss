@@ -1,21 +1,21 @@
 .ball-body {
-    background: #202020;
-    
+    background: rgb(14,13,13);
+    margin-left: 25%;  
   }
-    
-  #shadow {
+
+  .shadow {
     position: relative;
     top: 19em;
     left: 50%;
     margin-left: -1em;
     width: 2em;
     height: 1em;
-    background: #111;
+    background:rgb(204, 55, 85);
     border-radius: 50%;
-    -webkit-animation:   pulse .5s infinite alternate;
-    -moz-animation:     pulse .5s infinite alternate;
-    -o-animation:       pulse .5s infinite alternate;
-    animation:          pulse .5s infinite alternate;
+    -webkit-animation:   pulse 1s infinite alternate;
+    -moz-animation:     pulse 1s infinite alternate;
+    -o-animation:       pulse 1s infinite alternate;
+    animation:          pulse 1s infinite alternate;
   }
   
   @-webkit-keyframes pulse {
@@ -44,12 +44,13 @@
     100% { width: 3em; margin-left: -1.5em; }
   }
   
-  #ball {
+  .ball {
     position: relative;
-    background: #f7f7f7;
-    top: 3em;
-    width: 3em;
-    height: 3em;
+    cursor: pointer;
+    background: crimson;
+    top: 5em;
+    width: 5em;
+    height: 5em;
     border-radius: 50%;
     margin: 0 auto;
     z-index: 2;
@@ -60,34 +61,34 @@
   }
   
   @-webkit-keyframes bounce {
-    0%, 10% { top: 3em; height: 3em; width: 3em; }
-    15% { height: 3.15em; width: 2.9em; }
-    35% { height: 4em; width: 2.5em; }
-    75% { height: 4em; width: 2.5em; }
-    95% { height: 2em; width: 3.5em; }
-    100% { top: 18em; height: 1em; width: 3em; }
+    0%, 10% { top: 5em; height: 5em; width: 5em; }
+    15% { height: 5.15em; width: 4.9em; }
+    35% { height: 6em; width: 4.5em; }
+    75% { height: 6em; width: 4.5em; }
+    95% { height: 4em; width: 5.5em; }
+    100% { top: 18em; height: 1em; width: 5em; }
   }
   @-moz-keyframes bounce {
-    0%, 10% { top: 3em; height: 3em; width: 3em; }
-    15% { height: 3.15em; width: 2.9em; }
-    35% { height: 4em; width: 2.5em; }
-    75% { height: 4em; width: 2.5em; }
-    95% { height: 2em; width: 3.5em; }
-    100% { top: 18em; height: 1em; width: 3em; }
+    0%, 10% { top: 5em; height: 5em; width: 5em; }
+    15% { height: 5.15em; width: 4.9em; }
+    35% { height: 6em; width: 4.5em; }
+    75% { height: 6em; width: 4.5em; }
+    95% { height: 4em; width: 5.5em; }
+    100% { top: 18em; height: 1em; width: 5em; }
   }
   @-o-keyframes bounce {
-    0%, 10% { top: 3em; height: 3em; width: 3em; }
-    15% { height: 3.15em; width: 2.9em; }
-    35% { height: 4em; width: 2.5em; }
-    75% { height: 4em; width: 2.5em; }
-    95% { height: 2em; width: 3.5em; }
-    100% { top: 18em; height: 1em; width: 3em; }
+    0%, 10% { top: 5em; height: 5em; width: 5em; }
+    15% { height: 5.15em; width: 4.9em; }
+    35% { height: 6em; width: 4.5em; }
+    75% { height: 6em; width: 4.5em; }
+    95% { height: 4em; width: 5.5em; }
+    100% { top: 18em; height: 1em; width: 5em; }
   }
   @keyframes bounce {
-    0%, 10% { top: 3em; height: 3em; width: 3em; }
-    15% { height: 3.15em; width: 2.9em; }
-    35% { height: 4em; width: 2.5em; }
-    75% { height: 4em; width: 2.5em; }
-    95% { height: 2em; width: 3.5em; }
-    100% { top: 18em; height: 1em; width: 3em; }
+    0%, 10% { top: 5em; height: 5em; width: 5em; }
+    15% { height: 5.15em; width: 4.9em; }
+    35% { height: 6em; width: 4.5em; }
+    75% { height: 6em; width: 4.5em; }
+    95% { height: 4em; width: 5.5em; }
+    100% { top: 18em; height: 1em; width: 5em; }
   }

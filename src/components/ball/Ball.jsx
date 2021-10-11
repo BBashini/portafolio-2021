@@ -4,8 +4,8 @@ import "./ball.scss"
 export default function ball() {
     return (
         <div className="ball-body">
-            <div id="ball"></div>
-            <div id="shadow"></div>
+            <div className="ball"></div>
+            <div className="shadow"></div>
         </div>
     )
 }
