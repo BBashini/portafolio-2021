@@ -16,7 +16,7 @@ export default function Ball() {
         paddingTop: "250px",
         fontFamily:"Brush Script MT",
     }
-    
+   
     return (
         <div className="ball-body">
            { ball && <div className="ball" onClick={handleClick}></div> }
