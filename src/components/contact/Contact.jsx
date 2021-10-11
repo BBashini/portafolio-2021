@@ -9,6 +9,7 @@ export default function Contact() {
     e.preventDefault();
     setMessage(true);
   };
+
   return (
     <div className="contact" id="contact">
       <div className="left">
